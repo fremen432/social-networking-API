@@ -1,24 +1,23 @@
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const UserSchema = new Schema(
     {
         username: {
             type: String,
-
-
             require: true
         },
         email: {
             type: String,
-            
             require: true
-
         },
-        thoughts: [{
-            type: Schema.Types.ObjectId,
-            ref: 'Thought'
-        }],
-        friends: []
+        friends: [],
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+    ]
     },
     {
         toJSON: {
