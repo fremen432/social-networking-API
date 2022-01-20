@@ -1,4 +1,4 @@
-# Module 18 - Professional README Generator
+# Module 18 - Social Networking API
 
 
 <!-- <h1 align="center">Module 10 - Team Profile Generator</h1> -->
